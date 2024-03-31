@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__container container">
+      <nav class="header__nav">
+        <div class="header__logo">
+          <svg width="51" height="74" viewBox="0 0 51 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 48V0.799988H2.4V48H0ZM4.8 48V0.799988H12V48H4.8ZM14.4 48V0.799988H19.2V48H14.4ZM6.96 54.96H8.64L13.2 64.08L17.84 54.96H19.44V73.52H17.44V59.52L13.44 67.04H12.64L8.88 59.6V73.52H6.96V54.96Z"
+              fill="white" />
+            <path
+              d="M26.4062 48V0.799988H33.6063V48H26.4062ZM36.0062 48V0.799988H43.2062V48H36.0062ZM45.6063 48V0.799988H50.4062V48H45.6063ZM33.9263 54.96H39.8463C41.8196 54.96 43.2863 55.4667 44.2463 56.48C45.2596 57.44 45.7663 58.6933 45.7663 60.24C45.7663 61.7333 45.2863 62.96 44.3263 63.92C43.3663 64.88 41.9262 65.36 40.0062 65.36H36.0863V73.52H33.9263V54.96ZM39.7663 63.52C41.0996 63.52 42.0596 63.2267 42.6463 62.64C43.2863 62.1067 43.6063 61.3333 43.6063 60.32C43.6063 59.3067 43.2863 58.5067 42.6463 57.92C42.0063 57.28 41.0729 56.96 39.8463 56.96H36.0863V63.52H39.7663Z"
+              fill="white" />
+          </svg>
+        </div>
+
+        <ul class="header__link-items">
+          <li class="header__link-item">
+            <a href="/" class="link">HOME</a>
+          </li>
+
+          <li class="header__link-item">
+            <a href="/" class="link">MUSIC</a>
+          </li>
+
+          <li class="header__link-item">
+            <a href="/" class="link">ABOUT</a>
+          </li>
+
+          <li class="header__link-item">
+            <a href="/" class="link">STORE
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div class="header__banner banner grid">
+        <div class="banner__info col6 col4-l col3-t col4-m col4-sm ">
+          <h1>
+            MUSIC
+            PLAYER
+          </h1>
+
+          <p>
+            American company formed in 2002 in Boston, Massachusetts
+          </p>
+        </div>
+
+        <div class="banner__img col6 col4-l col3-t">
+          <img src="./imgs/apple.png" alt="iphone" class="img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="main__music music section">
+      <div class="music__container main__container   container">
+        <h2 class="music__title main__title">Music</h2>
+        <div class="music__content grid">
+          <div class="music__btns col4 col4-l col4-m">
+            <div class="music__btn">
+              <button class=" btn-primary">Listen now</button>
+            </div>
+            <div class="music__btn">
+              <button class="music__btn btn-primary">Find a song...</button>
+            </div>
+
+          </div>
+
+          <div class="music__imgs col8 col8-l">
+            <img src="./imgs/album.png" alt="album">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="main__about about section">
+      <div class="about__container main__container container">
+        <h2 class="about__title main__title">About</h2>
+        <div class="about__content">
+          <p>
+            MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit
+            play to stream anything you like.
+          </p>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="main__store store section">
+      <div class="store__container main__container container">
+        <h2 class="store__title main__title">Store</h2>
+        <div class="store__content grid">
+          <div class="store__info col5 col4-l col6-t ">
+            <div class="store__btns">
+              <button class="btn-secondary"> Download Windows x64</button>
+              <button class="btn-secondary">
+                Download MacOS
+              </button>
+            </div>
+
+            <div class="store__text">
+              <h3>Нужна предыдущая версия MPlayer?</h3>
+              <p>
+                Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией
+                операционной системы и определёнными устройствами.
+                <span>Выберите предыдущую версию MPlayer</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="store__img">
+            <img src="./imgs/device.png" alt="Laptop">
+          </div>
+
+          <div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__header grid">
+        <div class="col3 col2-l  footer__header-elem">
+
+        </div>
+        <div class="col3  col2-l col2-t  col2-m col4-sm  footer__header-elem">
+          <h3>MPlayer Store</h3>
+          <ul>
+            <li>
+              <a href="" class="link">Варианты оплаты</a>
+            </li>
+
+            <li>
+              <a href="" class="link">Состояние заказа</a>
+            </li>
+
+            <li>
+              <a href="" class="link">Помощь при покупке</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col3 col2-l  col2-t  col2-m col4-sm  footer__header-elem ">
+          <h3>Ценности MPlayer</h3>
+          <ul>
+            <li>
+              <a href="" class="link">Универсальный доступ</a>
+            </li>
+
+            <li>
+              <a href="" class="link">Окружающая среда</a>
+            </li>
+
+            <li>
+              <a href="" class="link">Конфиденциальность</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col3 col2-l  col2-t col2-m col4-sm  footer__header-elem">
+          <div>
+            <h3>MPlayer Store</h3>
+            <ul>
+              <li>
+                <a href="" class="link"> Учётная запись</a>
+              </li>
+
+              <li>
+                <a href="" class="link">Управление вашим MPlayer ID</a>
+              </li>
+
+              <li>
+                <a href="" class="link">Учётная запись MPlayer Store</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__body">
+
+        </div>
+      </div>
+
+      <div class="footer__body grid">
+        <div class="col12 col8-l col6-t col4-m col4-sm footer__body-title">
+          <span>
+            MUSIC
+            <br>
+            PLAYER
+          </span>
+        </div>
+        <ul class="col12 col8-l col6-t col4-m col4-sm  footer__body-list">
+          <li>
+            <span>© MPlayer Inc., 2022 г. Все права защищены.</span>
+          </li>
+          <li>
+            <a href="" class="link"> Условия использования</a>
+          </li>
+          <li>
+            <a href="" class="link"> Продажа и возврат</a>
+          </li>
+          <li>
+            <a href="" class="link"> Юридическая информация</a>
+          </li>
+
+        </ul>
+      </div>
+  </footer>
+
+</body>
+
+</html>
