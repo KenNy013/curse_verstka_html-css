@@ -1,0 +1,278 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+* {
+  --border: 2px solid rgb(59, 57, 57);
+
+  --effect-property: border-color color, background;
+  --effect-duration: 0.5s;
+  --effect-timing-function: ease;
+
+  --color: rgb(247, 248, 251);
+  --bg-def: #fdfafa;
+  --bg-eff: #ff6600;
+
+  --success: #219939;
+  --error: #cb3737;
+}
+
+body {
+  height: 100vh;
+  background-color: rgb(62, 48, 134);
+  color: var(--color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.feedback__form-container {
+  width: 30%;
+  margin: auto;
+
+  .feedback__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h2 {
+      font-size: 25px;
+      font-weight: 800;
+      text-align: center;
+    }
+    .feedback__elem {
+      display: flex;
+      flex-direction: column-reverse;
+
+      gap: 10px;
+
+      label {
+        font-size: 16px;
+        font-weight: 600;
+
+        transition-property: var(--effect-property);
+        transition-duration: var(--effect-duration);
+        transition-timing-function: var(--effect-timing-function);
+      }
+
+      &:hover {
+        label {
+          color: var(--bg-eff);
+        }
+      }
+      &:active {
+        label {
+          color: var(--bg-eff);
+        }
+      }
+      &:focus {
+        label {
+          color: var(--bg-eff);
+        }
+      }
+    }
+  }
+}
+
+input,
+textarea,
+button {
+  display: block;
+  background-color: var(--bg-def);
+
+  border-radius: 10px;
+
+  height: 50px;
+
+  color: black;
+
+  transition-property: var(--effect-property);
+  transition-duration: var(--effect-duration);
+  transition-timing-function: var(--effect-timing-function);
+
+  padding: 10px;
+}
+
+input:hover {
+  border: 2px solid var(--bg-eff);
+}
+
+textarea:hover {
+  border: 2px solid var(--bg-eff);
+}
+
+button:hover {
+  border: 2px solid var(--bg-eff);
+  background-color: var(--bg-eff);
+
+  color: var(--bg-def);
+}
+
+input:focus {
+  border: 2px solid var(--bg-eff);
+}
+
+textarea:focus {
+  outline: none !important;
+  border: 2px solid var(--bg-eff);
+}
+
+button:focus {
+  border: 2px solid var(--bg-eff);
+  background-color: var(--bg-eff);
+
+  color: var(--bg-def);
+}
+input:active {
+  border: 2px solid var(--bg-eff);
+}
+
+textarea:active {
+  border: 2px solid var(--bg-eff);
+}
+
+button:active {
+  border: 2px solid var(--bg-eff);
+  background-color: var(--bg-eff);
+
+  color: var(--bg-def);
+}
+
+textarea:focus-visible {
+  outline: none !important;
+  border: 2px solid var(--bg-eff);
+}
+
+input:focus + label {
+  color: var(--bg-eff);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:valid {
+  border: 2px solid var(--success);
+}
+
+textarea:valid {
+  border: 2px solid var(--success);
+}
+
+input:invalid {
+  border: 2px solid var(--error);
+  background-color: var(--error);
+}
+
+textarea:invalid {
+  outline: none !important;
+  border: 2px solid var(--error);
+  background-color: var(--error);
+}

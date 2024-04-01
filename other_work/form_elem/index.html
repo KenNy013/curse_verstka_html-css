@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="feedback__form-container">
+      <form action="" class="feedback__form" name="feedback">
+        <h2>Обратная связь</h2>
+
+        <div class="feedback__elem">
+          <input
+            type="text"
+            id="topic"
+            name="topic"
+            autocomplete="off"
+            autofocus
+            required
+          />
+          <label for="topic">Тема обращения</label>
+        </div>
+
+        <div class="feedback__elem">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="off"
+            required
+          />
+          <label for="username">Ваше имя</label>
+        </div>
+
+        <div class="feedback__elem">
+          <input
+            type="text"
+            id="email"
+            name="email"
+            autocomplete="off"
+            required
+          />
+          <label for="email">Ваш email</label>
+        </div>
+
+        <div class="feedback__elem">
+          <textarea id="messange" name="messange" required></textarea>
+          <label for="messange">Сообщение</label>
+        </div>
+
+        <div class="feedback__elem">
+          <button type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
